@@ -57,21 +57,74 @@ section h3 {
   color: #1a237e;
 }
 
+/* Melhoria para lista de participantes usando Bootstrap */
 .activity-card {
-  margin-bottom: 15px;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+  /* Remover estilos customizados para usar o visual do Bootstrap */
+  border: none;
+  background-color: transparent;
+  margin-bottom: 1rem;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
 }
 
-.activity-card h4 {
-  margin-bottom: 10px;
-  color: #0066cc;
+/* Espaçamento entre itens da lista de participantes */
+.participant-list {
+  margin-top: 1.5rem;
+  padding: 0;
 }
 
-.activity-card p {
-  margin-bottom: 8px;
+/* Estilo aprimorado para cada participante */
+.participant-list .list-group-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+  border-radius: 0.75rem;
+  border: none;
+  box-shadow: 0 2px 8px rgba(26, 35, 126, 0.08);
+  background: #fff;
+  transition: box-shadow 0.2s, transform 0.2s;
+  padding: 1rem 1.25rem;
+}
+
+.participant-list .list-group-item:hover {
+  box-shadow: 0 4px 16px rgba(26, 35, 126, 0.16);
+  transform: translateY(-2px) scale(1.01);
+}
+
+/* Avatar circular para participantes */
+.participant-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #e3e6f3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #3949ab;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+  box-shadow: 0 1px 4px rgba(26, 35, 126, 0.06);
+}
+
+/* Nome e detalhes */
+.participant-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.participant-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1a237e;
+  margin-bottom: 0.15rem;
+}
+
+.participant-details {
+  font-size: 0.95rem;
+  color: #6c757d;
 }
 
 .form-group {
